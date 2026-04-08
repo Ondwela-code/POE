@@ -176,7 +176,7 @@ public class Chat_App_Part1 {
                 default:
                     System.out.println("Invalid choice");
         }
-   // }while (choice!=3);{ 
+//    }while (choice!=3);{ 
     //loop continue while choice is not equals to 3
     
     enterMenu.close();
