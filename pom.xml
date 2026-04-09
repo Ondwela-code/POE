@@ -36,4 +36,5 @@
         <maven.compiler.release>25</maven.compiler.release>
         <exec.mainClass>com.mycompany.chat_app_part1.Chat_App_Part1</exec.mainClass>
     </properties>
+    <name>QuickChat</name>
 </project>

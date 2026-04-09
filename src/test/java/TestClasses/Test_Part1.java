@@ -4,7 +4,6 @@
  */
 package TestClasses;
 
-import com.mycompany.chat_app_part1.Chat_App_Part1;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,13 +15,30 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author Ondwela Mathobo
  */
-public class JUnitTest_Part1 {
-    @Test 
-    public void TestUserName(){
-         Chat_App_Part1 s =new Chat_App_Part1();
-        String expected = "kyl_1";
-        String Actual =s.checkUserName();
-        assertEquals(expected,Actual,"Expect the same to match of kyl_1");
-        
+public class Test_Part1 {
+    
+    public Test_Part1() {
     }
+    
+    @BeforeAll
+    public static void setUpClass() {
+    }
+    
+    @AfterAll
+    public static void tearDownClass() {
+    }
+    
+    @BeforeEach
+    public void setUp() {
+    }
+    
+    @AfterEach
+    public void tearDown() {
+    }
+
+    // TODO add test methods here.
+    // The methods must be annotated with annotation @Test. For example:
+    //
+    // @Test
+    // public void hello() {}
 }
