@@ -2,15 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.chat_app_part1;
-
+package com.mycompany.quickchat;
 import java.util.Scanner;
 
 /**
  *
  * @author Ondwela Mathobo
  */
-class Login {
+public class Login {
     
     // global variables that can be accessed throughout the program 
   String storedusername;
@@ -81,8 +80,9 @@ class Login {
         System.out.println(" Cell phone number incorrectly formatted or does not contain international code."); 
         return false;
     }  
-             
-           
+       
+    
+  
            
     // creating a void method called registerUser since we wont be returning a value
     void registerUser() {
@@ -112,10 +112,10 @@ class Login {
         
     } 
   // creating a void method called loginUser since we wont be returning a value  
-  void  loginUser(){
+       boolean loginUser(){
       if (storedusername==null){
           System.out.println("No user registered yet");
-          return ;
+          return false ;
           
       }
       int attempts=3;
@@ -146,8 +146,18 @@ class Login {
         if (!success){
             System.out.println(" Too many failed attempts. Account is locked");
         }
+      return success;
     }
   
-   
+   String returnLoginStatus(boolean loginSuccess){
+     if(loginSuccess){
+         return "Login successful. Welcome!";
+     }else{
+         return "Login failed.Please check your info.";
+         
+         
+     }
+     
+ }  
 
 }

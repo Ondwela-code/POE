@@ -5,6 +5,7 @@
 package com.mycompany.chat_app_part1;
 
 
+import com.mycompany.quickchat.Login;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

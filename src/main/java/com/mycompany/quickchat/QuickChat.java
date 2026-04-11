@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.chat_app_part1;
+package com.mycompany.quickchat;
 
 import java.util.Scanner;
 
 
 
-public class Chat_App_Part1 {
+public class QuickChat {
    
     public static void main(String[] args) {
         Scanner enterMenu=new Scanner(System.in);
